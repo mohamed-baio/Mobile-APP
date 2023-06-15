@@ -8,7 +8,7 @@ __ representative  --> representative assigned to the tasks
 ### Sample Request
 curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_all_tasks?status=Completed&representative=ahmed@test.com' \
 
-### Sample Response
+''' Sample Response
 {
     "message": [
         {
