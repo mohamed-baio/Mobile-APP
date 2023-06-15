@@ -45,3 +45,14 @@ ________________________________________________________________________________
   ** curl --location --request PUT '{base_url}/api/method/mobile_app.apis.update_task_status?name=TASK-2023-00011&status=In Progress' \
 #### Response
 ** "Task Status Created"
+
+____________________________________________________________________________________________________________________________
+## Endpoint :{base_url}/api/method/mobile_app.apis.delete_task
+### Method :DELETE
+
+### Example
+#### Request Body
+**curl --location --request DELETE '{base_url}/api/method/mobile_app.apis.delete_task?subject=Visit new doctor1' \
+#### Response
+** "Task Deleted"
+______________________________________________________________________________________________________________________________
