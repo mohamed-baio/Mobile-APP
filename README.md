@@ -8,10 +8,12 @@ __representative  --> representative assigned to the tasks
 
 ### Example
 #### Sample Request
-**curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_all_tasks?status=Completed&representative=ahmed@test.com' \
-
+```
+curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_all_tasks?status=Completed&representative=ahmed@test.com' \
+```
 #### Sample Response
-**{
+```
+{
     "message": [
         {
             "name": "TASK-2023-00005",
@@ -27,7 +29,7 @@ __representative  --> representative assigned to the tasks
             "description": "we will meet the doctor"
         }
 }
-
+```
 ____________________________________________________________________________________________________________________________
 ## Endpoint :{base_url}/api/method/mobile_app.apis.add_new_task
 ### Method :POST
