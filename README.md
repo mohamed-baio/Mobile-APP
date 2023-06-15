@@ -27,3 +27,10 @@ curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_all_tas
 }
 
 ____________________________________________________________________________________________________________________________
+## Endpoint :{base_url}/api/method/mobile_app.apis.add_new_task
+### Method :POST
+
+### Request Body
+ ** curl --location --request POST '{base_url}/api/method/mobile_app.apis.add_new_task?subject=visit new doctor3&representative=test@test.com&status=Completed&priority=Important&days=Monday&exp_start_date=2023-10-12&start_time=10:30&description=this is important&type=official' \
+ ### Response
+ ** "Task Created"
