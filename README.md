@@ -132,3 +132,48 @@ curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_vacatio
     ]
 }
 ```
+_____________________________________________________________________________________________________________________________________________________
+## Endpoint :{base_url}/api/method/mobile_app.apis.add_new_vacation
+### Method :POST
+
+### Example
+#### Request Body
+```
+curl --location --request POST '{base_url}/api/method/mobile_app.apis.add_new_vacation?employee=HR-EMP-00004&employee_name=elmaghraby&leave_type=Sick Leave&from_date=2023-07-20&to_date=2023-07-21&status=Pending&description=sick leave' \
+```
+#### Response
+ ```
+ "Vacation was done"
+ ```
+ ________________________________________________________________________________________________________________________________________
+ ## Endpoint :{base_url}/api/method/mobile_app.apis.POC
+### Method :GET
+### URL Parameters:
+__address
+
+### Example
+#### Sample Request
+```
+curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_poc?address=Elnasr city-1' \
+```
+#### Sample Response
+```
+{
+    "message": [
+        {
+            "address": "Elnasr city-1",
+            "client_name": "mohamed baio",
+            "poc": "2",
+            "frequency": "5",
+            "specialty": "gehe"
+        },
+        {
+            "address": "Elnasr city-1",
+            "client_name": "Mohamed yassin",
+            "poc": "2",
+            "frequency": "3",
+            "specialty": "ortho"
+        }
+    ]
+}
+```
