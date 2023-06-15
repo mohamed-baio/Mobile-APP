@@ -1,15 +1,17 @@
 # Mobile-APP
 ## Endpoint:{base_url}/api/method/mobile_app.apis.get_all_tasks
 ### Method :GET
+
 ### URL Parameters:
-__ Status --> 'Planned'-'In Progress'-'Completed'-'All'
-__ representative  --> representative assigned to the tasks
+__Status --> 'Planned'-'In Progress'-'Completed'-'All'
+__representative  --> representative assigned to the tasks
 
-### Sample Request
-curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_all_tasks?status=Completed&representative=ahmed@test.com' \
+### Example
+#### Sample Request
+**curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_all_tasks?status=Completed&representative=ahmed@test.com' \
 
-''' Sample Response
-{
+#### Sample Response
+**{
     "message": [
         {
             "name": "TASK-2023-00005",
@@ -32,9 +34,9 @@ ________________________________________________________________________________
 
 ### Example
 #### Request Body
- ** curl --location --request POST '{base_url}/api/method/mobile_app.apis.add_new_task?subject=visit new doctor3&representative=test@test.com&status=Completed&priority=Important&days=Monday&exp_start_date=2023-10-12&start_time=10:30&description=this is important&type=official' \
+**curl --location --request POST '{base_url}/api/method/mobile_app.apis.add_new_task?subject=visit new doctor3&representative=test@test.com&status=Completed&priority=Important&days=Monday&exp_start_date=2023-10-12&start_time=10:30&description=this is important&type=official' \
 #### Response
- ** "Task Created"
+ **"Task Created"
  
  ____________________________________________________________________________________________________________________________
  ## Endpoint :{base_url}/api/method/mobile_app.apis.update_task_status
@@ -42,9 +44,9 @@ ________________________________________________________________________________
  
  ### Example
  #### Request Body
-  ** curl --location --request PUT '{base_url}/api/method/mobile_app.apis.update_task_status?name=TASK-2023-00011&status=In Progress' \
+ **curl --location --request PUT '{base_url}/api/method/mobile_app.apis.update_task_status?name=TASK-2023-00011&status=In Progress' \
 #### Response
-** "Task Status Created"
+**"Task Status Created"
 
 ____________________________________________________________________________________________________________________________
 ## Endpoint :{base_url}/api/method/mobile_app.apis.delete_task
@@ -54,5 +56,16 @@ ________________________________________________________________________________
 #### Request Body
 **curl --location --request DELETE '{base_url}/api/method/mobile_app.apis.delete_task?subject=Visit new doctor1' \
 #### Response
-** "Task Deleted"
+**"Task Deleted"
 ______________________________________________________________________________________________________________________________
+## Endpoint :{base_url}/api/method/mobile_app.apis.get_vacations
+### Method :GET
+### URL Parameters:
+__employee_name
+
+### Example
+#### Sample Request
+**curl --location --request GET '{base_url}/api/method/mobile_app.apis.get_vacations?employee_name=Elmaghraby' \
+
+#### Sample Response
+
